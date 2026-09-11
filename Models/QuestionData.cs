@@ -269,6 +269,20 @@
                     },
                     CorrectAnswer = "B"
                 },
+
+            new Question
+                {
+                    Number = 20,
+                    Text = "A student already belongs to Section A for a particular subject. The application attempts to assign the same student to Section A again. What is the primary concern?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Data integrity" },
+                        { "B", "HTML formatting" },
+                        { "C", "CSS inheritance" },
+                        { "D", "Razor syntax" }
+                    },
+                    CorrectAnswer = "A"
+                }
         };
     }
 }
