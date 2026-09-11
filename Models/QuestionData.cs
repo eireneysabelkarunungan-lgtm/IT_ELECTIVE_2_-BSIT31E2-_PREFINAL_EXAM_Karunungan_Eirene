@@ -72,6 +72,20 @@
                         { "D", "Starts the MVC application" }
                     },
                     CorrectAnswer = "C"
+                },
+
+            new Question
+                {
+                    Number = 6,
+                    Text = "Where is a database connection string commonly stored in an ASP.NET Core MVC application?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Program.cs only" },
+                        { "B", "appsettings.json" },
+                        { "C", "Index.cshtml" },
+                        { "D", "Student.cs" }
+                    },
+                    CorrectAnswer = "B"
                 }
         };
     }
