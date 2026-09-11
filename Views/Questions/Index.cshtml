@@ -1,31 +1,28 @@
 ﻿@model List<IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene.Models.Question>
 
 @{
-    ViewData["Title"] = "Prefinal Exam - Questions";
+    ViewData["Title"] = "Exam Answers";
 }
 
-<div class="text-center mb-4">
-    <h1>IT Elective 2 – Prefinal Exam</h1>
-    <p class="text-muted">Eirene Ysabel Karunungan &bull; BSIT31E2</p>
-</div>
+<div class="exam-shell">
+    <div class="exam-card">
+        <div class="eyebrow">IT ELECTIVE 2 &middot; PREFINAL EXAM</div>
+        <h1 class="exam-heading">Exam Answers</h1>
+        <p class="exam-subtitle">Eirene Ysabel Karunungan &bull; BSIT31E2</p>
 
-<div class="row row-cols-1 row-cols-md-4 g-3">
-    @foreach (var q in Model)
-    {
-        <div class="col">
-            <a asp-action="Details" asp-route-id="@q.Number" class="text-decoration-none">
-                <div class="card h-100 shadow-sm text-center">
-                    <div class="card-body">
-                        <h4 class="card-title">Q@(q.Number)</h4>
-                        <p class="card-text text-truncate">@q.Text</p>
-                    </div>
-                </div>
+        <span class="field-label">Questions (@Model.Count / 20)</span>
+
+        @foreach (var q in Model)
+        {
+            <a class="question-list-row" asp-action="Details" asp-route-id="@q.Number">
+                <span><span class="q-number">Q@(q.Number)</span>@q.Text</span>
+                <span>&rarr;</span>
             </a>
-        </div>
-    }
-</div>
+        }
 
-@if (!Model.Any())
-{
-    <p class="text-center text-muted mt-4">No questions added yet.</p>
-}
+        @if (!Model.Any())
+        {
+            <p class="exam-subtitle">No questions added yet.</p>
+        }
+    </div>
+</div>

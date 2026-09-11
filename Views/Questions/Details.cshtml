@@ -4,34 +4,30 @@
     ViewData["Title"] = $"Question {Model.Number}";
 }
 
-<a asp-action="Index" class="btn btn-outline-secondary btn-sm mb-3">&larr; Back to all questions</a>
+<div class="exam-shell">
+    <div class="exam-card">
+        <div class="eyebrow">IT ELECTIVE 2 &middot; PREFINAL EXAM &middot; QUESTION @Model.Number</div>
+        <h1 class="exam-heading">Question @Model.Number</h1>
+        <p class="exam-subtitle">@Model.Text</p>
 
-<div class="card shadow-sm">
-    <div class="card-header bg-dark text-white">
-        <h4 class="mb-0">Question @Model.Number</h4>
-    </div>
-    <div class="card-body">
-        <p class="fs-5">@Model.Text</p>
-
-        <ul class="list-group mb-3">
-            @foreach (var opt in Model.Options)
-            {
-                var isCorrect = opt.Key == Model.CorrectAnswer;
-                <li class="list-group-item @(isCorrect ? "list-group-item-success fw-bold" : "")">
-                    @opt.Key. @opt.Value
-                    @if (isCorrect)
-                    {
-                        <span class="badge bg-success float-end">Correct Answer</span>
-                    }
-                </li>
-            }
-        </ul>
+        <span class="field-label">Options</span>
+        @foreach (var opt in Model.Options)
+        {
+            var isCorrect = opt.Key == Model.CorrectAnswer;
+            <div class="option-row @(isCorrect ? "correct" : "")">
+                @opt.Key. @opt.Value
+                @if (isCorrect)
+                {
+                    <span class="badge-correct">Correct</span>
+                }
+            </div>
+        }
 
         @if (!string.IsNullOrWhiteSpace(Model.Explanation))
         {
-            <div class="alert alert-info">
-                <strong>Explanation:</strong> @Model.Explanation
-            </div>
+            <p class="exam-subtitle" style="margin-top: 20px;">@Model.Explanation</p>
         }
+
+        <a class="btn-exam" asp-action="Index" style="margin-top: 12px;">&larr; Back to all questions</a>
     </div>
 </div>

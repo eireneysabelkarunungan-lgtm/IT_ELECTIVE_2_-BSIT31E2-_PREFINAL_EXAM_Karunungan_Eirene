@@ -29,5 +29,10 @@ namespace IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene.Controllers
             //return View();
             //return NotFound;
         }
+
+        public IActionResult AnswerSheet()
+        {
+            return View(QuestionData.All.OrderBy(q => q.Number).ToList());
+        }
     }
 }
