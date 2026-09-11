@@ -145,7 +145,20 @@
                         { "D", "Validate Student input" }
                     },
                     CorrectAnswer = "B"
-                }
+                },
+            new Question
+                {
+                    Number = 11,
+                    Text = "Why might a ViewModel be used when displaying Student and Section information?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "To replace the database" },
+                        { "B", "To combine or shape the data specifically needed by the view" },
+                        { "C", "To automatically create database tables" },
+                        { "D", "To prevent controllers from using LINQ" }
+                    },
+                    CorrectAnswer = "B"
+                },
 
         };
     }
