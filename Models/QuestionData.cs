@@ -228,6 +228,20 @@
                     },
                     CorrectAnswer = "A"
                 },
+
+            new Question
+                {
+                    Number = 17,
+                    Text = "What is the purpose of a try...catch block in a controller?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "To create navigation properties" },
+                        { "B", "To catch and handle exceptions that may occur during execution" },
+                        { "C", "To generate database tables" },
+                        { "D", "To perform client-side validation" }
+                    },
+                    CorrectAnswer = "B"
+                },
         };
     }
 }
