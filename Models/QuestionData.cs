@@ -130,6 +130,21 @@
                         { "D", "It validates the student's name" }
                     },
                     CorrectAnswer = "B"
+                },
+
+
+            new Question
+                {
+                    Number = 10,
+                    Text = "What does .Include() generally allow EF Core to do?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Delete the Section table" },
+                        { "B", "Load related Section data together with Students" },
+                        { "C", "Create a new Student" },
+                        { "D", "Validate Student input" }
+                    },
+                    CorrectAnswer = "B"
                 }
 
         };
