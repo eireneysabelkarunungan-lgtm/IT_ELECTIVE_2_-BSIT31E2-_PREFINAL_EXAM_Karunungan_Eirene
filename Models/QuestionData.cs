@@ -16,8 +16,22 @@
                         { "D", "It removes the need for MVC" }
                     },
                     CorrectAnswer = "C",
-                    Explanation = "An in-memory collection is wiped out every time the app restarts. A database stores data on disk, so it survives restarts — that persistence is the core reason databases exist."
-                }
+                   
+                },
+                new Question
+                    {
+                        Number = 2,
+                        Text = "Which approach is being used when an existing database is used to generate EF Core entity classes?",
+                        Options = new Dictionary<string, string>
+                        {
+                            { "A", "Code-First" },
+                            { "B", "Database-First" },
+                            { "C", "Model-First" },
+                            { "D", "Controller-First" }
+                        },
+                        CorrectAnswer = "B",
+                        
+                    }
         };
     }
 }
