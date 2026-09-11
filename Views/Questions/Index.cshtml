@@ -1,0 +1,31 @@
+﻿@model List<IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene.Models.Question>
+
+@{
+    ViewData["Title"] = "Prefinal Exam - Questions";
+}
+
+<div class="text-center mb-4">
+    <h1>IT Elective 2 – Prefinal Exam</h1>
+    <p class="text-muted">Eirene Ysabel Karunungan &bull; BSIT31E2</p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-3">
+    @foreach (var q in Model)
+    {
+        <div class="col">
+            <a asp-action="Details" asp-route-id="@q.Number" class="text-decoration-none">
+                <div class="card h-100 shadow-sm text-center">
+                    <div class="card-body">
+                        <h4 class="card-title">Q@(q.Number)</h4>
+                        <p class="card-text text-truncate">@q.Text</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <p class="text-center text-muted mt-4">No questions added yet.</p>
+}
