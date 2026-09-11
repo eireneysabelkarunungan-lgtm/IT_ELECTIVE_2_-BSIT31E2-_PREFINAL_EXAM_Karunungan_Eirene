@@ -1,0 +1,20 @@
+﻿@model List<IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene.Models.Question>
+
+@{
+    ViewData["Title"] = "Answer Sheet";
+}
+
+<div class="exam-shell">
+    <div class="exam-card">
+        <div class="eyebrow">IT ELECTIVE 2 &middot; PREFINAL EXAM</div>
+        <h1 class="exam-heading">Answer Sheet</h1>
+        <p class="exam-subtitle">Eirene Ysabel Karunungan &bull; BSIT31E2</p>
+
+        <ol class="answer-list">
+            @foreach (var q in Model)
+            {
+                <li>@q.CorrectAnswer</li>
+            }
+        </ol>
+    </div>
+</div>
