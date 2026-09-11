@@ -186,6 +186,20 @@
                     },
                     CorrectAnswer = "B"
                 },
+
+            new Question
+                {
+                    Number = 14,
+                    Text = "Why is server-side validation still necessary if client-side validation exists?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Client-side validation can be bypassed" },
+                        { "B", "Client-side validation automatically modifies the database" },
+                        { "C", "Server-side validation only works with SQLite" },
+                        { "D", "Client-side validation cannot display messages" }
+                    },
+                    CorrectAnswer = "A"
+                },
         };
     }
 }
