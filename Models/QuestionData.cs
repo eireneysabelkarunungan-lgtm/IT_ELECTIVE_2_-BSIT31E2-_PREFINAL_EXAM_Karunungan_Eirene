@@ -33,7 +33,7 @@
                     },
 
 
-                new Question
+            new Question
                 {
                     Number = 3,
                     Text = "What is the primary purpose of Entity Framework Core?",
@@ -48,18 +48,31 @@
                 },
 
             new Question
-            {
-                Number = 4,
-                Text = "Which EF Core component is primarily responsible for communicating with the database?",
-                Options = new Dictionary<string, string>
                 {
-                    { "A", "DbContext" },
-                    { "B", "DbSetView" },
-                    { "C", "ControllerContext" },
-                    { "D", "RazorContext" }
+                    Number = 4,
+                    Text = "Which EF Core component is primarily responsible for communicating with the database?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "DbContext" },
+                        { "B", "DbSetView" },
+                        { "C", "ControllerContext" },
+                        { "D", "RazorContext" }
+                    },
+                    CorrectAnswer = "A"
                 },
-                CorrectAnswer = "A"
-            }
+        new Question
+                {
+                    Number = 5,
+                    Text = "What does the following command primarily do?\n\ndotnet ef dbcontext scaffold \"ConnectionString\" Microsoft.EntityFrameworkCore.SqlServer -o Models",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Deletes the database" },
+                        { "B", "Creates a new MVC project" },
+                        { "C", "Generates EF Core models and a DbContext from an existing database" },
+                        { "D", "Starts the MVC application" }
+                    },
+                    CorrectAnswer = "C"
+                }
         };
     }
 }
