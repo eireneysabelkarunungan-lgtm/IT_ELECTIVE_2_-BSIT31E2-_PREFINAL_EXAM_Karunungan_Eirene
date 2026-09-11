@@ -16,7 +16,7 @@
                         { "D", "It removes the need for MVC" }
                     },
                     CorrectAnswer = "C",
-                   
+
                 },
                 new Question
                     {
@@ -45,7 +45,21 @@
                         { "D", "To replace the C# compiler" }
                     },
                     CorrectAnswer = "C"
-                }
+                },
+
+            new Question
+            {
+                Number = 4,
+                Text = "Which EF Core component is primarily responsible for communicating with the database?",
+                Options = new Dictionary<string, string>
+                {
+                    { "A", "DbContext" },
+                    { "B", "DbSetView" },
+                    { "C", "ControllerContext" },
+                    { "D", "RazorContext" }
+                },
+                CorrectAnswer = "A"
+            }
         };
     }
 }
