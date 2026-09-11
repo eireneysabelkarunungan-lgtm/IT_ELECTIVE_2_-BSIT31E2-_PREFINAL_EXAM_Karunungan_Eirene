@@ -214,6 +214,20 @@
                     },
                     CorrectAnswer = "B"
                 },
+
+            new Question
+                {
+                    Number = 16,
+                    Text = "Which is the best reason for having a database-level unique constraint on StudentNumber?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "It protects data integrity even if application-level validation is bypassed" },
+                        { "B", "It makes Razor Views render faster" },
+                        { "C", "It removes the need for a Controller" },
+                        { "D", "It automatically creates a ViewModel" }
+                    },
+                    CorrectAnswer = "A"
+                },
         };
     }
 }
