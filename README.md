@@ -6,12 +6,11 @@
 
 ## About
 This is an ASP.NET Core MVC application that displays each Prefinal Exam
-question along with my chosen answer and a short explanation. No database
-is used.
+question from the exam given. No database is used.
 
 ## RUN the System
 
-* **1. Download ZIP:** In the GitHub repo, click "Code" and choose **"Download ZIP"**.
+* **1. Download ZIP or Clone the repo:** In the GitHub repo, click "Code" and choose **"Download ZIP"**. Alternatively, clone using the link.
 * **2. Extract All:** Select the downloaded .zip file and extract.
 * **3. Find file location:** Open the folder then open **IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene**.
 * **4. Open the System:** Find **IT_ELECTIVE_2_PREFINAL_Karunungan_Eirene.slnx** and open with Visual Studio.
