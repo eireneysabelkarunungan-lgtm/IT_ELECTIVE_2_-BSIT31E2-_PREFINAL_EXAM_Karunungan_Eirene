@@ -101,7 +101,22 @@
                         { "D", "Many-to-One only" }
                     },
                     CorrectAnswer = "B"
+                },
+
+            new Question
+                {
+                    Number = 8,
+                    Text = "In the following example, what is SectionId?\n\npublic int SectionId { get; set; }\npublic Section Section { get; set; }",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Primary key of Student" },
+                        { "B", "Foreign key referencing Section" },
+                        { "C", "Navigation property" },
+                        { "D", "Database connection string" }
+                    },
+                    CorrectAnswer = "B"
                 }
+
         };
     }
 }
