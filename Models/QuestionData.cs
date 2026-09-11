@@ -200,6 +200,20 @@
                     },
                     CorrectAnswer = "A"
                 },
+
+            new Question
+                {
+                    Number = 15,
+                    Text = "A school requires every student to have a unique Student Number. Which rule best represents this requirement?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "Student Number should always be nullable" },
+                        { "B", "Student Number should be unique" },
+                        { "C", "Student Number should always be the same" },
+                        { "D", "Student Number should contain only spaces" }
+                    },
+                    CorrectAnswer = "B"
+                },
         };
     }
 }
