@@ -160,6 +160,19 @@
                     CorrectAnswer = "B"
                 },
 
+            new Question
+                {
+                    Number = 12,
+                    Text = "Consider this query:\n\nvar students = _context.Students.Include(s => s.Section).ToList();\n\nWhat is the main benefit of Include(s => s.Section)?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "It loads the related Section navigation property" },
+                        { "B", "It creates a Section object manually" },
+                        { "C", "It removes the foreign key" },
+                        { "D", "It prevents the query from accessing the database" }
+                    },
+                    CorrectAnswer = "A"
+                },
         };
     }
 }
