@@ -86,6 +86,21 @@
                         { "D", "Student.cs" }
                     },
                     CorrectAnswer = "B"
+                },
+
+
+            new Question
+                {
+                    Number = 7,
+                    Text = "A Student belongs to exactly one Section, while a Section can contain many students. What type of relationship is this?",
+                    Options = new Dictionary<string, string>
+                    {
+                        { "A", "One-to-One" },
+                        { "B", "One-to-Many" },
+                        { "C", "Many-to-Many" },
+                        { "D", "Many-to-One only" }
+                    },
+                    CorrectAnswer = "B"
                 }
         };
     }
