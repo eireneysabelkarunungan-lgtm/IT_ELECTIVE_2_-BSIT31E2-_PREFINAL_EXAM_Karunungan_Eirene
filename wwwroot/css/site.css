@@ -78,6 +78,7 @@ body {
 }
 
 .option-row {
+    position: relative;
     display: block;
     background: var(--input-bg);
     border: 1px solid var(--border);
@@ -93,17 +94,25 @@ body {
         border-color: var(--accent-blue);
         box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
         font-weight: 700;
+        padding-right: 125px;
     }
 
-    .option-row .badge-correct {
-        float: right;
+    .option-row .badge-answer {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
         background: var(--correct-green);
         color: #fff;
         font-size: 0.7rem;
         font-weight: 700;
-        padding: 3px 10px;
+        line-height: 1;
+        padding: 6px 11px;
         border-radius: 999px;
+        white-space: nowrap;
     }
+
+
 
 .btn-exam {
     display: flex;
