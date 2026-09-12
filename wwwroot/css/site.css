@@ -115,25 +115,26 @@ body {
 
 
 .btn-exam {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    background: var(--accent-blue);
-    color: #fff;
-    font-weight: 700;
-    border: none;
-    border-radius: 12px;
-    padding: 14px;
-    font-size: 1rem;
+    display: block;
+    width: 85%;
+    margin: 0 auto 10px auto;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background-color: #3b82f6;
+    color: white;
     text-decoration: none;
-    transition: background 0.15s ease;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.2s;
 }
 
+    .btn-exam:last-child {
+        margin-bottom: 0;
+    }
+
     .btn-exam:hover {
-        background: var(--accent-blue-dark);
-        color: #fff;
+        background-color: #2563eb;
+        color: white;
     }
 
 .question-list-row {
